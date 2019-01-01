@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head><title>EMOJIcam</title>
+<style>
+body{
+  background-color: #000000 !important;
+  color:#ffffff !important;
+}
+* { font: 15px monospace; }
+body { width: 100%; }
+video, canvas { display: none; }
+#outer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+#ascii, #fps {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0.6rem;
+}
+#title {
+  text-align: center;
+}
+
+</style>
+<meta charset="utf-8">
+<script id="title" type="ascii-art">
+LOADING
+</script>
+<script id="title" type="ascii-art">
+Brite &plusmn; _ Tint &#x25cb; _ Horiz &#x25cb; _ Freeze &#x25cb;
+</script>
+<script id="intro" type="ascii-art">
+...FFFFthhhhhh...SKZZZTssTKHHHKHHhhh...hhhSHHHHHHHhhhhFFFFfff...
+
+Attempting to establish video downlink...
+Click the 'Allow' button up above.
+</script>
+<script id="nocamera" type="ascii-art">
+Unable to connect to camera
+</script>
+<script id="nosupport" type="ascii-"art">
+Your browser is unsupported
+</script>
+</head>
+<body>
+<div id="outer">
+  <pre style="color:#fff" id="ascii"></pre><br>
+  <div style="color:#fff" id="fps"></div>
+</div>
+<canvas width=80 height=40></canvas>
+<video autoplay></video>
+<script type="text/javascript" src="app.js"></script>
+</body>
